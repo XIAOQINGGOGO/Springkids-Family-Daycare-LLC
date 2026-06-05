@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffd27d;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+header h1 {
+  color: #5a3a00;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+nav a {
+  color: #5a3a00;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #ff8c00;
+}
+
+.hero {
+  min-height: 520px;
+  background: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
+              url("childcare.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-box {
+  max-width: 850px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #5a3a00;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9f1c;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+section h2 {
+  color: #5a3a00;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #ff8c00;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery div {
+  background: #ffe4b5;
+  padding: 50px 20px;
+  border-radius: 15px;
+  flex: 1;
+  font-weight: bold;
+  color: #5a3a00;
+}
+
+footer {
+  background: #5a3a00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .cards,
+  .gallery {
+    flex-direction: column;
+  }
+}
